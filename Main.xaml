@@ -1,0 +1,380 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" this:Main.in_ZoomMeeting="NULL" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:maes="clr-namespace:Microsoft.Activities.Extensions.Statements;assembly=Microsoft.Activities.Extensions" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:s="clr-namespace:System;assembly=mscorlib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_ZoomMeeting" Type="InArgument(x:String)" />
+  </x:Members>
+  <mva:VisualBasic.Settings>
+    <x:Null />
+  </mva:VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1182,1790</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="40">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>Microsoft.Activities.Extensions.Statements</x:String>
+      <x:String>Microsoft.VisualBasic.CompilerServices</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.CV</x:String>
+      <x:String>UiPath.Shared.ObjectLibrary</x:String>
+      <x:String>UiPath.CV.Activities</x:String>
+      <x:String>UiPath.CV.Activities.Interfaces</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="64">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>Microsoft.Activities.Extensions</AssemblyReference>
+      <AssemblyReference>UiPath.CV</AssemblyReference>
+      <AssemblyReference>UiPath.CV.Activities</AssemblyReference>
+      <AssemblyReference>System.Runtime.WindowsRuntime</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap2010:Annotation.AnnotationText="in_ZoomMeeting and str_ZoomMeeting is only the name of the meeting.&#xA;dict_ZoomMeeting is a Dictionary of Meeting Name and {Meeting ID, Meeting Passcode}" DisplayName="Launch Zoom" sap:VirtualizedContainerService.HintSize="602,1725" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, s:String[])" Name="dict_ZoomMeeting" />
+      <Variable x:TypeArguments="x:String" Name="str_ZoomMeeting" />
+      <Variable x:TypeArguments="x:String" Name="str_MeetingID" />
+      <Variable x:TypeArguments="x:String" Name="str_MeetingPasscode" />
+      <Variable x:TypeArguments="s:String[]" Name="arr_MeetingLogin" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="Zoom Dictionary" sap:VirtualizedContainerService.HintSize="560,66" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="291,60" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, s:String[])">[dict_ZoomMeeting]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="scg:Dictionary(x:String, s:String[])">[New Dictionary(Of String, String())]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <maes:AddToDictionary x:TypeArguments="x:String, s:String[]" Dictionary="[dict_ZoomMeeting]" DisplayName="Add to dictionary Staging Standup" sap:VirtualizedContainerService.HintSize="291,70" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_1" Key="Staging Standup" Value="[{&quot;921 4921 9227&quot;, &quot;cu(hpfWu4&quot;}]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </maes:AddToDictionary>
+      <maes:AddToDictionary x:TypeArguments="x:String, s:String[]" Dictionary="[dict_ZoomMeeting]" DisplayName="Add to dictionary Topic of the Week" sap:VirtualizedContainerService.HintSize="291,70" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_2" Key="Topic of the Week" Value="[{&quot;932 2812 6132&quot;, &quot;849120&quot;}]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </maes:AddToDictionary>
+      <maes:AddToDictionary x:TypeArguments="x:String, s:String[]" Dictionary="[dict_ZoomMeeting]" DisplayName="Add to dictionary Bridging the Gap" sap:VirtualizedContainerService.HintSize="291,70" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_3" Key="Bridging the Gap" Value="[{&quot;950 0882 7622&quot;, &quot;R6xnpW&quot;}]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </maes:AddToDictionary>
+      <maes:AddToDictionary x:TypeArguments="x:String, s:String[]" Dictionary="[dict_ZoomMeeting]" DisplayName="Add to dictionary Kahoot" sap:VirtualizedContainerService.HintSize="291,70" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_4" Key="Kahoot" Value="[{&quot;927 9262 4137&quot;, &quot;607043&quot;}]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </maes:AddToDictionary>
+      <maes:AddToDictionary x:TypeArguments="x:String, s:String[]" Dictionary="[dict_ZoomMeeting]" DisplayName="Add to dictionary Hot Seat Interview" sap:VirtualizedContainerService.HintSize="291,70" sap2010:WorkflowViewState.IdRef="AddToDictionary`2_5" Key="Hot Seat Interview" Value="[{&quot;929 7314 8085&quot;, &quot;854675&quot;}]">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+            <x:Boolean x:Key="IsPinned">False</x:Boolean>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+      </maes:AddToDictionary>
+    </Sequence>
+    <If Condition="[in_ZoomMeeting = &quot;NULL&quot;]" DisplayName="If in_ZoomMeeting" sap:VirtualizedContainerService.HintSize="560,51" sap2010:WorkflowViewState.IdRef="If_1">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <If.Then>
+        <Sequence DisplayName="If in_ZoomMeeting is NULL, Then..." sap:VirtualizedContainerService.HintSize="376,383" sap2010:WorkflowViewState.IdRef="Sequence_4">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ui:InputDialog OptionsString="{x:Null}" DisplayName="Input Dialog" sap:VirtualizedContainerService.HintSize="334,291" sap2010:WorkflowViewState.IdRef="InputDialog_1" IsPassword="False" Label="Select Zoom Meeting to Attend" Options="[{&quot;Staging Standup&quot;, &quot;Topic of the Week&quot;, &quot;Bridging the Gap&quot;, &quot;Kahoot&quot;, &quot;Hot Seat Interview&quot;}]" Title="Zoom Meeting Selection">
+            <ui:InputDialog.Result>
+              <OutArgument x:TypeArguments="x:String">[str_ZoomMeeting]</OutArgument>
+            </ui:InputDialog.Result>
+          </ui:InputDialog>
+        </Sequence>
+      </If.Then>
+      <If.Else>
+        <Sequence DisplayName="Else, in_ZoomMeeting has been Assigned" sap:VirtualizedContainerService.HintSize="304,152" sap2010:WorkflowViewState.IdRef="Sequence_5">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Assign sap:VirtualizedContainerService.HintSize="262,60" sap2010:WorkflowViewState.IdRef="Assign_2">
+            <Assign.To>
+              <OutArgument x:TypeArguments="x:String">[str_ZoomMeeting]</OutArgument>
+            </Assign.To>
+            <Assign.Value>
+              <InArgument x:TypeArguments="x:String">[in_ZoomMeeting]</InArgument>
+            </Assign.Value>
+          </Assign>
+        </Sequence>
+      </If.Else>
+    </If>
+    <maes:GetFromDictionary x:TypeArguments="x:String, s:String[]" Dictionary="[dict_ZoomMeeting]" DisplayName="Get Meeting ID and Passcode from dictionary" sap:VirtualizedContainerService.HintSize="560,70" sap2010:WorkflowViewState.IdRef="GetFromDictionary`2_1" Key="[str_ZoomMeeting]" Value="[arr_MeetingLogin]">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </maes:GetFromDictionary>
+    <ui:MultipleAssign DisplayName="Multiple Assign Zoom Login" sap:VirtualizedContainerService.HintSize="560,51" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+      <ui:MultipleAssign.AssignOperations>
+        <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[str_MeetingID]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[arr_MeetingLogin(0)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+          <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+            <ui:AssignOperation.To>
+              <OutArgument x:TypeArguments="x:String">[str_MeetingPasscode]</OutArgument>
+            </ui:AssignOperation.To>
+            <ui:AssignOperation.Value>
+              <InArgument x:TypeArguments="x:String">[arr_MeetingLogin(1)]</InArgument>
+            </ui:AssignOperation.Value>
+          </ui:AssignOperation>
+        </scg:List>
+      </ui:MultipleAssign.AssignOperations>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+          <x:Boolean x:Key="IsPinned">False</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ui:MultipleAssign>
+    <uix:NApplicationCard WebDriverMode="{x:Null}" AttachMode="ByInstance" CloseMode="Never" DisplayName="Use Application: Zoom Cloud Meetings" sap:VirtualizedContainerService.HintSize="560,1193" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="Simulate" ScopeGuid="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do in Zoom" sap:VirtualizedContainerService.HintSize="526,904" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ClickType="Single" DisplayName="Click 'Join a Meeting'" sap:VirtualizedContainerService.HintSize="484,51" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="220, 197, 200, 32" ElementType="Button" FriendlyName="'Join a Meeting'" FullSelectorArgument="&lt;ctrl name='Join a Meeting' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Join a Meeting' role='push button' automationid='' check:text='Join a Meeting' /&gt;" Guid="166c8b7d-b3dc-45fa-8968-86fe13b54df6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMwAAAAkCAYAAADFNdUdAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOpSURBVHhe7Zy9axRBGIf9Cyzt/A8s7ayCpZ2lnaWkEQsRLGxEhKAgQQtBGw9sUggieJyNhU0Ki7OwuULBwhSJ+b6c+Rjv3Z135+udvd3zSLiZ3wMPxszNzM7l/d3srnHPKQBAYxAYAFqAwADQgtrA/N4+Vq++DNXtlT115cmWOn9nHcIkpfq+9XZXPf88VD/Xj3UCQqKB6aweqIv3N8TBIUzZC3c31NNP+zoJLmJg7r3bEweCMCevvdhWw8MTnYqSIDC0s0idIczRRx/dncYJDJ274TQMQiOdnvV/HeqEeIGhCx6pE4Q5S5cojBOYm292xQ4Q5uzVZ1s6IV5gLj38I3aAMGfptIxxAiO9GEK4rhOCwEDYSCbtwCwN1aBY2UgtSu2iO6pb9DlSy0tS+6zl+UoGPe83Kjoj3UK0WUdbT3vd8yWDwASebWDU2lAtWO2Lff39gtkFZqF3VIxoAorA1MkgMGeuKdTBWvmnKVjdtjZuoz9nto4ttVzMJexoUJTJMjDup/aY/o7Vz/uktceovh7j9LE1xWioK3Seb6S6+riqItanY4P+qME6wp1Bbo8d3zTr5j7EuF9Hfr9TkMksMFKxaKpToVjh8A5g6Hb0PI6xOWJFZAKzyNcruijLgpcKMTZHXSgIam8bmNi6a97L6FrnVyavwFQX0FxY9mu4EGKF47fHAuPrjRdtt4vW+pqCHF2HKUzeTYrdaVK7VezRa5hJ65beS2HeVGSyCgxf6LoX1qZ46gPDRSAVm60pLJcmgTGF3e2V8xZzRAMT4gYmpH1g5HWL72XQJx2ZpAMT/FClT8Dqh8wF/X+BCe4+BeP7uoFxiz1yDJM+ySe1zyAw0hzV+x2dd35lEgyM+cEypijCtoqJ1zCRwqnmLTVFo6nucDUMTPX3MXxMwTFYr7EJ1uBh7QbuDQEat+26I3MUcJ90ZJIPTFjUQmia3iXz+kuBccenMbzxgtdzuyky93pj/L3gGEhhHVYgJrZXYxI07hTr9scQjzMNmbSvYeApagXUCW4aMggMnFJhB9M0u3s4XzIIDJxSKTDpnYqxjBMY/PdkCGUZJzA3Xsd+3QPCfKVnljFOYOgJGVIHCHOWHvDHOIFZ/XEodoAwZ99/M/+Y7ASGePABuwyE7PWX2zoZJUFg6El/lx9vip0hzEm6CUbPF7cJAkNs7p8U523SIBDmIO0sflgIMTBM7/vf4lll2HFgDtJjxuhO8crXA52AkNrAAABcEBgAGqPUPwgWrEZeECqhAAAAAElFTkSuQmCC" InformativeScreenshot="1858671ab5cc4c4dbfb2457a67ca9726.png" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='ZPFTEWndClass' title='Zoom Cloud Meetings' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+              </uix:NClick.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NClick>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Join Meeting'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="484,216" sap2010:WorkflowViewState.IdRef="NTypeInto_1" InteractionMode="Simulate" ScopeIdentifier="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Text="[str_MeetingID]" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="47, 134, 283, 20" ElementType="InputBox" FriendlyName="'MeetingNumberEditWnd'" FullSelectorArgument="&lt;wnd cls='MeetingNumberEditWnd' /&gt;" FuzzySelectorArgument="&lt;wnd cls='MeetingNumberEditWnd' /&gt;" Guid="1e0e69d3-52a7-4d49-a2ad-b632ca54adb3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAR8AAAAYCAYAAADDJflBAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAASSSURBVHhe7ZhLjqNADIbn0LlDr7hBb3OA3rPNCbLKESL1HRjsMsF22WVAk5AJ/iSkgXrgx18/mf4zJEmS7ECaT5Iku5DmkyTJLqT5JEmyC2k+SZLsQppPkiS7kOaTJMkuCPO5nr+G0+l76O/0oOI2nE/jnPON7p9DieNnuNL9M8B3sDzu/ff4TnivvLr+l2Y8n5I3v1q9eG8gl1btdP056/r/O/Td13BeKJayt11X1MCTtZ3MGObjiwaa03X/uEHXn+HUXYZXnzEtflt4ZLZPNsIJiInXvhji/2lAOheNrv92tpjPeBmaS/N5LZX5oLmYh600+VjmA5S8XyHK+sBSzRuH+F2pc5Ho+m9nvfl0/QU/Kjq+NJ/XUptPf7ObSSZxNRpUvtD0RTG+1N44CvDxfLxoXyncSVxkAmqPCbGXEycH57PxpvAg9+DXj8xR7j3n0P4lJfMGpPn4dXb2x7it+UvjbdT8fhk6vl59QOpcJLr+HLk2imUap1u6D2ts9LTSwKIcy3mZ5mAcYl0dh9/HY2GYz28pjiMm3aBqrmpqNI73TeFOYpqbBON8jb5/HDpH3ACu0Xl481FMvkhwrRAZxfzYr9x33U9TaDJvYD5Y7Toa++uYr5fHv5fG26r5vee56PVWLhJdf45cG8VSxifz0XFq+N46Bq2BJTnyuEpd69iqd7h9PBam+ZS/dTDhopBLgWSD1DyEiyEaH1loPkLILB77HSQM1nRNJDyJ/Y6CMyZiNHIwkHlTjLhHVMeoRpyN8br7EaqPOhdNqz9ybRTLXAfcs2E8gNgb95lr0dbAiJGjnA+1ZdoGxJqoj8fCMR/5b94U0SB0bTgg9YXFjMYB1VBACMRqDheNcygiIWnhNOcrkQowx+iQLxMYxsTrNNUlrKO1f3k2zyG2xmvUAGvG41EHUxiGQtefs6r/NO7/rVKi48IcKG5LA+tyNMyF6zvs47FwzWc+1NDcuaCiQa6QiWgc4M0hVonPeYclJA68g4835xsxPnBz3GY+UsxEWMfG/lgrEDit3xqvOPAwd9yT10TVyM2F0PXnrOo/jRfzmZ751HGVXOCZ1MCWHHkNCb4m7OOx8M1navpZFlw0SIjAIBoHVEOBVeJz3gF7uGYyosd98ykidI3DyxGfT0IzcjCoxUyEdYz2pwMKe2+Nl68TcwtYv+bBlLT6I9cGsbBxjKFZJycuMoW+0vbaHAPzEXEnDfMZwabIZ/qQoohEk0YxnGWDWuPW10DGsUx8wsAobk/cAMbFxk3zwfe09wHMHMeYmjkYyLwl7Toa+481mO/l+KZ4ec31IZrqtLP5AMWApJ44XlylJiymTTkG5gO3+B6vj8eibT5YTNlI65A+GkeXbm57vIgHx2hfGUckPoDtQfuYZsLAmNh4ES3bAy9fxBq93spR5GBQ11/i19GrkRfPhnhVzcV6OFzGIVuTy2MfGotzs80HmPa26u3GNdXL08SiHGPzAXTurTp9MsJ8PglXZEmSvAWfaT7wtVnxqyVJktfzEeajf8am8STJ+/Ox/+1KkuS9SfNJkmQX0nySJNmBYfgLoO5v8i/07l8AAAAASUVORK5CYII=" InformativeScreenshot="b314607074d3a0d7e0c55c85aab35f5a.png" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='zWaitHostWndClass' title='Zoom' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="35, 36, 330, 80" ElementType="Text" FriendlyName="'Join Meeting'" FullSelectorArgument="&lt;ctrl name='Join Meeting' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Join Meeting' role='text' automationid='' check:text='Join Meeting' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAU4AAABUCAYAAADtad4gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUESURBVHhe7dzbkeI4FAbgTWuCmBjIoHPoBCYJHicLnjoNqiYPr0RzkWRb+NB4mXV/X9V5GEC+iNGPZEz/MwAQIjgBggQnQJDgBAgSnABBghMgSHACBAlOgCDBCRAkOAGCBCdAkOAECBKcAEGCEyBIcAIECU6AIMEJECQ4AYIEJ0CQ4AQIEpwAQYITIEhwAgQJToAgwQkQJDgBggQnQJDgBAgSnABBghMgSHACBAlOgCDBCRAkOAGCBCdAkOAECBKcAEGCEyDoRcH5Mbzvfg4/fqTa/RoO50d5Bn0La+sG5+H9PABP9Tbsj+cnvui4fyu2m+r94/zMmlKglPtcuO/RsZ7qeX3xbK/pW/heBOeP3qzsz7C/zN6qenFwHj+G/f7XsJs4dsEJ63tJcL5mOTkXnD+H97kDOP5O4TTV5nXBWb8nU31nqQ5re1FwvkIZnG/DrpxJzszKytnbblfO5P7m4ATW9k2DM80y338V5zYVQOUy/S29XnACn54QnH+GQ77eVs3IUqV/v+8/hskmhzK0mqXy5HMpxJrgmt32rCY49/UyfLRcL5fpu99p/7fXdvsiHWe1vO/1w8myNvV7MVGXWfPafXvMlwKa1x/+9PcLG/O14Jy9BljWRLvQ4K4Dr6rQFx9NcKbBXn3x02yrWqbvc7gVr32kL6auNwbarBOcwb5t2pfVfnAKTrbsC8HZGXSjakIjMLj7NTfzm9IGZx2O9THWy/S8j25fLPoASVWGUbDNGsHZrwfP8VyCky17ODhHAzkN3NvT7Qztc9Z2FRrcab95KZjl23DKWWKq5QN0HJxtGFy3VT6elun5vCJ9cVq6nuTLGPWy9tLukTZZ3W5iFrtS37bHW77fx8M4VJe/L/D/82BwNsvcc7jUmhlp+ZrA4K4CN7v3/KyJ4Jw5j3aZns33RXOe5awymwznR9p8emZwLu/bznt50dsvbMyDwXln4J/NDvLA4B4NwCZUvhacSbW/fI7jZfrpZXN90RzPvTrt95E2Z88MzuV9u+D97oQ9bE0nOJvZWDVINxSc7ePlt+3FzOpbB2d7vIKTb64TnE04Vsuz3nMXndf8VcHZhtGtym3PBmd7njMfIrVH2nx6SXAueL/bn3qOtg0bcg3OfC/m4Toa2tnmOKDasNmlwX8bTM/7cmj54L5nPjjbfX5WGY7t+ZbPTfVVcx9kWv7nezX3130+0uZT26+3L5XOVunb/vEe03bLdrlG24YNuQVnMyDrmpjZNIOsX037VQb3PZ3gbGdUuZpZ1XxwJs0xz1XvPOeqPf92Znety6x1rb5deLyXGm0bNmRBcOZfhpxf1FoSnvkm7moqlaw1uLt6wTk+/3a73eBMZgOtqHafj7SZ7fO1gzPp/R/Jf62pfGy0bdiQa3DmQVwPyPTvvPxuQ28k33eYf3JZtk2DLv9sMC0jJ5v/hcFZ73ccjPeC8yTfC9n+fDL3Y/rwuN4v2Xqoze/bX0C61H8QnNlpWV7u+/LBeG/bsCGdL4dgOV8O8Z0ITp6gvUY8cU0cNkRwslAKx/Plg/IqRf655exlA9gowclCE3ceTJbZJtsnOFloQXBO3UEBGyQ4Wehy90R7C9WdOwBggwQnQJDgBAgSnABBghMgSHACBAlOgCDBCRAkOAGCBCdAkOAECBKcAEGCEyBIcAIECU6AIMEJECQ4AYIEJ0CQ4AQIEpwAQYITIEhwAgQJToCQYfgXKYEU4SboRVMAAAAASUVORK5CYII=" SearchSteps="Selector, FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <If Condition="[str_ZoomMeeting = &quot;Hot Seat Interview&quot;]" DisplayName="If Hot Seat Interview" sap:VirtualizedContainerService.HintSize="484,225" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Then>
+                <Sequence DisplayName="If Meeting is Hot Seat Interview, Then" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Aaron Gallaway'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_2" InteractionMode="HardwareEvents" ScopeIdentifier="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Text="UiPath - Aaron Gallaway" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="35, 172, 330, 48" ElementType="InputBox" FriendlyName="'Aaron Gallaway'" FullSelectorArgument="&lt;ctrl name='Please enter your name' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Please enter your name' role='editable text' automationid='' check:text='Aaron Gallaway' /&gt;" Guid="4a335d29-e0d8-4a06-ba61-586b368898ee" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAU4AAAA0CAYAAADlndF6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAUaSURBVHhe7d0NattIAIbhvZNv48v4Kj5HKQETQiiYNJualuJgGmgwIW0agpumTcOsvtHI0oxHP5MqdG2/D4itZEkdG/RmJGfpPwYAkIRwAkAiwgkAiQgnACQinACQiHACQCLCCQCJCCcAJOoUzqenJ7NcfjVnZwsznX40h4fvzKtXUxYWFpatX9Qzde309NxcXn4xj4+/XfnqtYbz+vrWnljRVDxvbu7M/f1P9yoAbDf1TF27uvpmZrNPtncKaJPacKq6OsnJydw8PPxyWwFgt3VpXzScOvD4+H1rdQFgV+lu+82bD9E77Gg4VVuiCWDf6RZezz9DG+FUZTVFBQAYM59/NovF0q3lvHDq23M9GOWZJgDk1EU9ulytfrgtQTh1e67bdABASTNOzTwLXjj1e0z6Sh4AULq7+25nnQUvnEdHM286CgDIb9dfvz5xa0E4Dw7edvqteQDYN/q/jApeOKsvAABKhBMAEhFOAEhEOAEgEeEEgESEs0eT0cAMRhO3trkOYDe8QDgvzHiYBWM4zv60TSZmNMjGHSzDcfd3QTiB/dB/OC/GZjgcmuFgaBKa81ddjIc2khuN03tJCB/hBPZD7+FULDRL25poTEZZNPuJPOEE9kPP4dTtrouQZmuDUbYlYLdnQVkv/j529qfbfBs0//ViZrhegigV0fb2a3xkkD9W6Hw73jL21nA2HB+LrN0WjN/bL/F8sv583TqAdP2GU7FbX5R5lMJr92I88mZ34QW+jl4sIl6o3LPUyn75PtUQuueWkYBYNjzdZ5ttY29bbzze/qCovr/imWt1fPm24pC084l/PIDn6TWcunCrszcbwbarNLjA83AGF7ybWW2cKghfGCppnGFFw+mCbKOVLU2zs2Ds4d8fG4/HOz6Iml7L/u5x9TO14w1jWOGdLzKbduesfT8AOukvnLEIRcOkzW5WuV7KGERDFwSq5McmDLdVe2ymZnyF2Fiaxt4lnF2P1372vVRiZ49NOJ99rTL+6OcDIFlv4dy8gMulvFjd7Wc1RkHYwovdeqlwuuPrYuKPpX3szeFsP96u29c1W3RBX88yw0cfHc5n9yl+MFT/DOBP9BTOyG2h48UnErE8uOW2aDhtPLrdqqeFc/Pvr0ode2M4Oxyf7ZTHbZK9r/VnUAQzCF+n8+VjsJ+J9t/4AAE8Rz/hbLrlrb4WBtCtVy92L1YVNkJeFPKghKFKDef6PJHxe2PpMPbGcHY4PtuY/wDS78FWBqNxaJv3uXQ6X0bvfzgyIxtftw3AH+klnDYQkdjl/MDlsyJd4O6YIGx14RTv2GwJI/m8cDp2v/Lc+eLHtG3sjeHMtB0v+T5BxF0Uw/fW5XzZXvnnX/OZAkjXz4wT/2NuFhv+QAHwbIRz19nZaocZN4DOCOdOY7YJvITacOpfcdO/5obttH7+yTdCQO9qw3l4+M7c3/90awCAQm04T07m5vr61q0BAGS1+mGOjmZuLQjnYrE08/lntwYAkMvLL2Y2++TWgnDqNl1V5TknAJROT8/N1dU3txaEU87PL+0CADBmufxqzs4Wbi23EU7NNqfTj+b2duW2AMB+enj4Ze/CHx9/uy25jXCKHoQeH7+3/wWAfaRoahJ5c3PntpSi4RTNOBVPfWEEAPtEzzM104xFU2rDKbpt17fsqq6+VVKBAWAX6Xa8eJ6pL4PC2/OqxnAWVF19FT+Z/Gt/CZSFhYVl15aDg7c2mopnm07hBACUCCcAJDHmPzthXAaJ12eJAAAAAElFTkSuQmCC" InformativeScreenshot="e26e8768f6c88aa296a63acd988dc47b.png" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='zWaitHostWndClass' title='Zoom' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                  <uix:NCheck Action="Uncheck" DisplayName="Check/Uncheck 'Remember my'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NCheck_1" ScopeIdentifier="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Version="V1">
+                    <uix:NCheck.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="35, 228, 330, 26" ElementType="CheckBox" FriendlyName="'Remember my'" FullSelectorArgument="&lt;ctrl name='Remember my name for future meetings' role='check box' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Remember my name for future meetings' role='check box' automationid='' check:fulltext='Remember my name for future meetings' /&gt;" Guid="50431149-f337-45b7-b513-75edd0789e72" InformativeScreenshot="8c1b164b7bb32397c3845718fe92b0b0.png" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='zWaitHostWndClass' title='Zoom' /&gt;" SearchSteps="Selector, FuzzySelector" Visibility="Interactive" />
+                    </uix:NCheck.Target>
+                  </uix:NCheck>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Join'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="181, 373, 88, 32" ElementType="Button" FriendlyName="'Join'" FullSelectorArgument="&lt;ctrl name='Join' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Join' role='push button' automationid='' check:text='Join' /&gt;" Guid="369181a4-c3f5-4a07-85ed-6d9543048f88" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAkCAYAAAAEnl30AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVGhD7Zq/S8NQEMf9Cxzd/A8c3ZzE0c3RzVFcxEEEBxcRQRSk6CDoYsHFQRBBqYuDi4NDHVw6KDjYobW/09rq6b3m2r73LqU1NU31vvCBJuml5cP1SJo3BJJAI8IDjggPOG2Fv+Y+4PDWgcXTIkxsZ2F4KSV4gH7mTwqwd+PAc+rDNWjHU3j0rgyjq2n25EJ7RpbTsHNdck3qYYWvnBXZEwndMb2fA6f66VqtxxKOnc0VCz9j41LvdE04zh4ZI70Fx0v8peoaNoTjwOeKBH/giKZowueOC2yB4I+p3axr2BA+tv7GFgj+wLFC0YRzbxZ6A0WEBwQlPMK3HEiob1GBBe44Sx6uVE0NIlvc8fBAEeEBQRlw4YMDJfTCF+JqZzPxfEud0eGt52i8/o5W0x8oIRaehUhS7bCTdGBSvcdLeA0SRu1V1P2cPkEJr/BoRW1p87mla+sCvYSbx0W4jSF8MlZTW81uRppd3164/StJxPr7fz4lNMItwY0OJ3nfNIRS14vwLrHndFOMnxkuwj3QpdpSGOmdXqUY9SL8n0ER4QFBEeEBQdGEy+O134OiCZ896v8t8F8E16xQNOH4hJkrEPyBC4QomvC7pypbIPjj/IFu4gzhmLUL6fJeMnOQc83WYwnHlULjmxm2WOgOvAjB9ZmtsYRjMqVPNXe4kwidgZ1tysawwimxx3e1VkU6vjNwmQle6Z3el12DdtoKl/Q+IjzQAHwBB+0pRzBRdEQAAAAASUVORK5CYII=" InformativeScreenshot="dad799ea55b54be0c451ca551cc61751.png" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='zWaitHostWndClass' title='Zoom' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence DisplayName="Else, Meeting is not Hot Seat Interview" sap:VirtualizedContainerService.HintSize="200,66" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ClickType="Single" DisplayName="Click 'Join'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="181, 373, 88, 32" ElementType="Button" FriendlyName="'Join'" FullSelectorArgument="&lt;ctrl name='Join' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Join' role='push button' automationid='' check:text='Join' /&gt;" Guid="369181a4-c3f5-4a07-85ed-6d9543048f88" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFwAAAAkCAYAAAAEnl30AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIoSURBVGhD7Zq/S8NQEMf9Cxzd/A8c3ZzE0c3RzVFcxEEEBxcRQRSk6CDoYsHFQRBBqYuDi4NDHVw6KDjYobW/09rq6b3m2r73LqU1NU31vvCBJuml5cP1SJo3BJJAI8IDjggPOG2Fv+Y+4PDWgcXTIkxsZ2F4KSV4gH7mTwqwd+PAc+rDNWjHU3j0rgyjq2n25EJ7RpbTsHNdck3qYYWvnBXZEwndMb2fA6f66VqtxxKOnc0VCz9j41LvdE04zh4ZI70Fx0v8peoaNoTjwOeKBH/giKZowueOC2yB4I+p3axr2BA+tv7GFgj+wLFC0YRzbxZ6A0WEBwQlPMK3HEiob1GBBe44Sx6uVE0NIlvc8fBAEeEBQRlw4YMDJfTCF+JqZzPxfEud0eGt52i8/o5W0x8oIRaehUhS7bCTdGBSvcdLeA0SRu1V1P2cPkEJr/BoRW1p87mla+sCvYSbx0W4jSF8MlZTW81uRppd3164/StJxPr7fz4lNMItwY0OJ3nfNIRS14vwLrHndFOMnxkuwj3QpdpSGOmdXqUY9SL8n0ER4QFBEeEBQdGEy+O134OiCZ896v8t8F8E16xQNOH4hJkrEPyBC4QomvC7pypbIPjj/IFu4gzhmLUL6fJeMnOQc83WYwnHlULjmxm2WOgOvAjB9ZmtsYRjMqVPNXe4kwidgZ1tysawwimxx3e1VkU6vjNwmQle6Z3el12DdtoKl/Q+IjzQAHwBB+0pRzBRdEQAAAAASUVORK5CYII=" InformativeScreenshot="dad799ea55b54be0c451ca551cc61751.png" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='zWaitHostWndClass' title='Zoom' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </Sequence>
+              </If.Else>
+            </If>
+            <Sequence sap2010:Annotation.AnnotationText="The Type Into activity may throw an Exception since not all meetings require a Passcode. The Exception will be Rethrown to prevent the Click activity from executing, and therefore, no log will be created due to the Exception." DisplayName="Enter Passcode" sap:VirtualizedContainerService.HintSize="484,198" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsAnnotationDocked">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="438,443" sap2010:WorkflowViewState.IdRef="TryCatch_2">
+                <TryCatch.Try>
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" ContinueOnError="True" DisplayName="Type Into 'Enter meeting passcode'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,216" sap2010:WorkflowViewState.IdRef="NTypeInto_3" InteractionMode="HardwareEvents" ScopeIdentifier="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Text="[str_MeetingPasscode]" Timeout="3" Version="V1">
+                    <uix:NTypeInto.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="35, 116, 330, 48" ElementType="InputBoxPassword" FriendlyName="'Meeting Passcode'" FullSelectorArgument="&lt;ctrl name='Please enter meeting passcode' role='editable text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Please enter meeting passcode' role='editable text' automationid='' /&gt;" Guid="62106d04-976e-41bb-9773-2ee99a90bca0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAU4AAAA0CAYAAADlndF6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAVYSURBVHhe7d3dattKFIbhfdG5hx75EnroC8hpMYESTCgENzs2LcHB9KDBmKRpCG6aNg2ztUYja/4lFbu7sd4Hhna0ZP0VfZmRkuYfBQDohOAEgI4ITgDoiOAEgI4ITgDoiOAEgI4ITgDoiOAEgI5aBefz87NaLr+o8/OFOj29UMfHU/XmzSmNRqO9+CZ5Jrl2dnaprq5u1NPTL5N8aY3BeX19pzcsoSnheXt7rx4efpgqALxskmeSa6vVVzWbfdJ5JwGakwxOSV3ZyGQyV4+PP81SANhvbbIvGpzywZOTD42pCwD7Smbb7959jM6wo8EpaUtoAug7mcLL809fEJySsjJEBQAoNZ9/VovF0vRKTnDK23N5MMozTQAoSS7Ko8v1+rtZ4gWnTM9lmg4AqMmIU0aeFSc45fuY5JU8AKB2f/9NjzorTnCOxzNnOAoAKKfro9HE9LzgPDp63+q75gGgb+SnjCpOcNoFAECN4ASAjghOAOiI4ASAjghOAOhoL4NzOnylDgZjtTJ9NFuNXnPNgJa2Fpz6xjt4pYZTsyBmNVaDYp2DYfiD8tv0p4KzOmenvdDwITiB9rYenLmbTwJtMCjW22Jw/p83fLjvGzUaSIAeqtzXj78RwQm0t93gHB6q4cFrNYrefRe6NpBg2dvgLJhRdXbk/RciOIH2thycF+WochT+/5123Q9OXdtMd8Pgjder0Z3VzI3v76M6Jmc7kZDQn7PqU1k/EyZ6e0FdvkCY4KweTWyaNxL16/a2cjUxPaxrXt29XkWLfKFqc65N/y5AX209OMsb3p+qSsiVN14s1JwbVgdC/fmmeiy8ovsobv460MtwC9exjrsKLm/btmhw6s+V57oaHTph4x6XFbDGdFRtK1cz+3WCrLi+w7IenEf1Babjuep1Mtcd6LPtB2dBbjpnqio3nbkJnfCwQqZW3uj1iC1TL7QOTqsv3M+FQSWiwWgJ62EgO+zwiZ6bkasljlUzARjUnO21ONcW1x3os50Epx2UumsFqRNiOkiKfqTp0WFTvRALt1hwBo8P7BCz/25pFZyJ46qE69T70ccpyyL7SNYSx6ola1ZYtjlXvY7Zv9eC6wj00G6CU49OzIhFRi/WzR8GZyIERFO9EAu3PxqcyboZfdr1xH42IWkdcyWo5a5JsvY7wZnYB4BdBWdBbr6iL8vt0HJCLTW1rDTVC7Hw6hyc0amp2c7vBmckfPT6qUBKHINm13LXJFULPt9wrrl9ANhhcOpRjnz7kRsUsVBzw6QYrZoXHaKpHguo2D6ywWme3zkhqOveMk82OP3wMf3NPov+0D4mvb863JI16WauSbTmvBxqd66N1x3osR0GZ7nMDyw/1ER5k9Yt+plk3QSB1MyN7+9D+vngFNZ2pBWfzwZjoVW92p6sZ+9zE6RVs0aBuZrhbLto9vnlaqV259r07wL01daCcx81BSOAfiI4k8pRGaMsAD6CU5OQtKft1XQ3nCIDQDI45be4yW9z6wv/uaD7/BMAasngPD6eqoeHH6YHAKgkg3Mymavr6zvTAwCI9fq7Go9npucF52KxVPP5Z9MDAIirqxs1m30yPS84ZZouqdqn55wA0OTs7FKtVl9NzwtOcXl5pRsAQKnl8os6P1+YXikIThltnp5eqLu7tVkCAP30+PhTz8Kfnn6ZJaUgOIU8CD05+aD/BIA+ktCUQeTt7b1ZUosGp5ARp4SnvDACgD6R55ky0oyFpkgGp5Bpu7xll9SVt0qSwACwj2Q6Xj3PlJdB/vTclg3OiqSuvIp/+/Zf/U2gNBqNtm/t6Oi9Dk0JzyatghMAUCM4AaATpf4Dfpf63dkVa04AAAAASUVORK5CYII=" InformativeScreenshot="01725a2e95d0e4c8ece928847b05b79f.png" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='zWaitHostWndClass' title='Enter meeting passcode' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target DesignTimeRectangle="35, 36, 330, 80" ElementType="Text" FriendlyName="'Enter meeting passcode'" FullSelectorArgument="&lt;ctrl name='Enter meeting passcode' role='text' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Enter meeting passcode' role='text' automationid='' check:text='Enter meeting passcode' /&gt;" ImageBase64="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" SearchSteps="Selector, FuzzySelector, Image" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NTypeInto.Target>
+                  </uix:NTypeInto>
+                </TryCatch.Try>
+                <TryCatch.Catches>
+                  <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="404,21" sap2010:WorkflowViewState.IdRef="Catch`1_2">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ActivityAction x:TypeArguments="s:Exception">
+                      <ActivityAction.Argument>
+                        <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+                      </ActivityAction.Argument>
+                      <Sequence sap:VirtualizedContainerService.HintSize="242,116" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                        <sap:WorkflowViewStateService.ViewState>
+                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                          </scg:Dictionary>
+                        </sap:WorkflowViewStateService.ViewState>
+                        <Rethrow sap:VirtualizedContainerService.HintSize="200,22" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+                      </Sequence>
+                    </ActivityAction>
+                  </Catch>
+                </TryCatch.Catches>
+                <TryCatch.Finally>
+                  <uix:NClick ClickType="Single" ContinueOnError="True" DisplayName="Click 'Join Meeting'" sap:VirtualizedContainerService.HintSize="334,156" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="Simulate" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="f6d3f8b6-6dcc-415b-ba8a-8eb5533a27b6" Timeout="2" Version="V1">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="159, 373, 110, 32" ElementType="Button" FriendlyName="'Join Meeting'" FullSelectorArgument="&lt;ctrl name='Join Meeting' role='push button' /&gt;" FuzzySelectorArgument="&lt;ctrl name='Join Meeting' role='push button' automationid='' check:text='Join Meeting' /&gt;" Guid="fd72ae52-0618-47b8-a115-000f0a39aa80" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHIAAAAkCAYAAABVCm6XAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAL1SURBVHhe7Zs5c7MwEIa//1+5+mq61FSuqdLSpHeTOk4CxuBDYbEWXSsOQ2xB9p15ZpzIq2NfHXhG/BOsVYiNXInYyJWo08jL5SqOx0ocDqX4+jqIj4+MeTCQ9zwvGx/AD5+8RpblSez3OVk58xz2+0wURSkdMkUaCSuQqogJg+/vQlytxekYCSuRCmbCwl6ZhpGwB/N2ugxgmz2fL9I5y0g4UKkgJkzgCEQZRub5kQxgwgTOSpRh5Ocn/8RYErC9ogwjqS8zYYNiIxcOarqRu1cRbf6LzWYrUqqc5E3ETcyLSHZUeR8YfyNK3s3ydNuWjevXWKaOYzqoVRi5iV7FTitPY61sRiN3yUtTp5o4f97IqagERpGdSFkW1WWz9utdJE1bxA7wRFC/ZqS5KmriNy3Omsl6He1nO0YH47cilu20yZXbahRvB/TLXUl0uTJRAfXeMw6MkXEpnb+hoH7BSGrQknYL9CUAV5giTmU7BsrIFM9DmaybEVSCfP3qMgvLxxrpG0dHboIzsn3QwATp38EB+RJglw8wkvoME8bbL5UwXH3Nau4r10zwnpF946ByQ7Q7BtTsRuIDgfkAopLQbSQOhkqajm6eSnic3OppYrxGuphGespHGUmPg8yNEzMO1GQjnc5RM6ztLM7EeY00TfDU2Tfz+8pnMJJqo82ft91uUHcbiR1E1OBU5x16z0hPAmSbCsvI9u8abMOpU/uOjtMnX7n9IAT1jh2Hp40GjBkHahYj3WQTZg59arXihxlpn2f1/5w6AaJfmlG95W2dANR7xzjsOsh+Dgc1/YxkJqBNHGNCDQfFRj4UYsVL6KfzflBs5EOhjLxvS0VQhpF8zWN5oAwjs4xvCCwJuPOKMoyEm1lUABMmcHEZZRh5Op3JACZMquoknbOMBBUF36RbAlmmLl6BHCPhBjO/5xE28FBqvwfiGAm61m7C/ktVwjwXWInUyzykkaiqOjd3XXmFPhe4pgq/KOB1Dp86jWQtR2zkKiTED0pvBSq2AMucAAAAAElFTkSuQmCC" InformativeScreenshot="02b02b7951269c6abb28c0305cfdcdb4.png" ScopeSelectorArgument="&lt;wnd app='zoom.exe' cls='zWaitHostWndClass' title='Enter meeting passcode' /&gt;" SearchSteps="Selector, FuzzySelector, Image" Visibility="Interactive" />
+                    </uix:NClick.Target>
+                  </uix:NClick>
+                </TryCatch.Finally>
+              </TryCatch>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="-1098, 334, 640, 480" FilePath="C:\Users\aaron\AppData\Roaming\Zoom\bin\zoom.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAARWSURBVFhHzZbbThtXFIbnBRIeJLnrRS+K8ZhjMAEfCJAo7QOEN4ivKhzABEPM0WAMCZCovehNL3pTVamqSlUrhKpKVQ9qU7m0atocoOlRkWfPn3/t2YPHjgEnDVWW9Gvv2Xut71+zx2PbeqljYBlN59+CPXQLlwY3MTK0idzgBvJUYWgDxaBkTfZ0juSyRmqFYXCNR98qThCSGrqJOxQuvP18klphDG6qlDAN/vBIFHF6YMPdEgCbwMA6dcOtUe1avRyKtcI4T9bABraEbWzqR/8NnBpYd3d4fDh33X2hEqawxcPYVUf3LE72r2F7kMfWv+Yeizw2tus+juQaLktCctU9VnkeKmVsvbh4EycTRbeUvA5wPFbxRmUsVb0d8RXYiVUgvuL+L/K8YBt7y4oV1HCSn+RYwUVsmZLRzHuXjhBz+oI1Qcl6nT3PC8PGnu/9kkrL8fcRqCVQM77O1+mN9YN1kfv9vKvuBa8hXUvJPLpoODXSXssYMfZsIK9yCT6b3rzaVw+L3/vSxd4/wKN/D9be38DOLrD5mcClVow9xjufu/j4e7mxClf2xUs8jb1lnV1U+XgR4KjVQ/UXFO79gWeKtU9ctM0oDBaVNpa4/ydfPbKE6fONV97Ys4EFVYitAD0LTKSi8wrJZYW7jzxIo/Hdb/zqpflXd80CQxjCEqbP76OXeBp7y+Jisa/ABiSJ6p5TSPDYfvndUBqM0kNg6gPXXHkhDGFFyfT52ouext6yuFnsXYZOEnXPsgE+r2dt4Ec2sPDh0w3EyRKmzzdelQbOzKji2SXoJBGvEeezep4G5us1QJYwfb54Relp7NlAThV7FqGTRF05HhOP6uc9Q2kwpIHs+083EONzF6bP1170NPaWxc1CdAHouuYldl5z9PzbX6thR4WYXeAn/oufKnWyJjfTKWzhkq+96GnsLatjWuW754HOaWdf9qSDxZrjPCru8ZWLzjjonXNw+xuvVl5Due4IsMVLPI29biB3Zo6LU0ysUeEjhR/uAw8I2v3rYD2g3uUXT1vWQSubb+d461MXt792tWmQqb3oaewtqz1bTnfNQhcFJbCWDAsIiPMuEvMOkpQ/Budxyq/RI5uwr3pjkCkSr44pVfkqbsuq4c4Z6OR6aiVIFKlRcE3m9WrrSXvR09izgYlypC3r7hsdt8SrfTLwc9ye2W2KTDil1kmA44FqbXDtMBmPkvwFNPZeRDLlVNs0YI8zkc/dl50pB+Y117W545W92mtdy3zxiEyoy8a2Eq9N4EQ4o7alw/BYGXZQBFVdG1XlHZATlMdW26+++bD67v2IZHAqPK52IleZOEqDFyjNFPbI4/p/y/2wRx+fDo85W14B0HKl/J8kDFtYZArb2Bwe8jhCV8qp0Ki60zLqIpwhYMJI5ocpkCe1LWSExlRKmAbfeLySQVNzGnYorS6F0uWR5nQ5Fxpx8s1pp0AVa1Tw9pjDXKmRWmEY3MsYlvUEDgO1A4N81IAAAAAASUVORK5CYII=" InformativeScreenshot="19bbf6eff3e18a26349e5d7c137bba01.png" Selector="&lt;wnd app='zoom.exe' cls='ZPFTEWndClass' title='Zoom Cloud Meetings'/&gt;" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
